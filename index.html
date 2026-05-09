@@ -104,34 +104,34 @@
 
         <h2>Request a Quote</h2>
 
-        <form id="quoteForm" action="https://formsubmit.co/first_choise_5@hotmail.com" method="POST"></form>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New submission from website">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" placeholder="Full Name" required />
+      <form id="quoteForm" action="https://formsubmit.co/first_choise_5@hotmail.com" method="POST">
 
-            <input type="email" placeholder="Email Address" required />
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_subject" value="New submission from website">
+         <input type="hidden" name="_template" value="table">
 
-            <input type="tel" placeholder="Phone Number" required />
+         <input type="text" name="name" placeholder="Full Name" required />
 
-            <input type="text" placeholder="Address" />
+         <input type="email" name="email" placeholder="Email Address" required />
 
-            <select required>
-                <option value="">What needs cleaning?</option>
-                <option>Windows</option>
-                <option>Eavestroughs</option>
-                <option>Christmas Lights</option>
-                <option>Siding & Fascia</option>
-            </select>
+         <input type="tel" name="phone" placeholder="Phone Number" required />
 
-            <textarea placeholder="Describe what needs cleaning..." rows="6"></textarea>
+         <input type="text" name="address" placeholder="Address" />
 
-            <button type="submit">Submit Quote Request</button>
+         <select name="service" required>
+             <option value="">What needs cleaning?</option>
+             <option>Windows</option>
+             <option>Eavestroughs</option>
+             <option>Christmas Lights</option>
+             <option>Siding & Fascia</option>
+         </select>
 
-        </form>
+         <textarea name="message" placeholder="Describe what needs cleaning..." rows="6"></textarea>
 
-    </section>
+         <button type="submit">Submit Quote Request</button>
 
+     </form>
+        
     <!-- JOB APPLICATION -->
     <section id="jobs" class="jobs">
 
