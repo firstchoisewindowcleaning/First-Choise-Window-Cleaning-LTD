@@ -132,44 +132,92 @@
 
      </form>
         
-    <!-- JOB APPLICATION -->
-    <section id="jobs" class="jobs">
+   <!-- JOB APPLICATION -->
+<section id="jobs" class="jobs">
 
-        <h2>Join Our Team</h2>
+    <h2>Join Our Team</h2>
 
-        <p>
-            We are looking for hardworking, reliable people who enjoy
-            outdoor work and great customer service.
-        </p>
+    <p>
+        We are looking for hardworking, reliable people who enjoy
+        outdoor work and great customer service.
+    </p>
 
-        <form id="jobForm" action="https://formsubmit.co/first_choise_5@hotmail.com" method="POST">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_subject" value="New submission from website">
-            <input type="hidden" name="_template" value="table">
-            <input type="text" placeholder="Full Name" required />
+    <form 
+        id="jobForm"
+        action="https://formsubmit.co/first_choise_5@hotmail.com"
+        method="POST"
+    >
 
-            <input type="email" placeholder="Email Address" required />
+        <!-- FORM SETTINGS -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_subject" value="New Job Application">
+        <input type="hidden" name="_template" value="table">
 
-            <input type="tel" placeholder="Phone Number" required />
+        <!-- FORM LIST -->
+        <ul class="form-list">
 
-            <input type="text" placeholder="City" />
+            <li>
+                <input
+                    type="text"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                />
+            </li>
 
-            <select>
-                <option>Do you have experience?</option>
-                <option>Yes</option>
-                <option>No</option>
-            </select>
+            <li>
+                <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    required
+                />
+            </li>
 
-            <textarea
-                rows="6"
-                placeholder="Tell us about yourself and why you'd like to work with us."
-            ></textarea>
+            <li>
+                <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    required
+                />
+            </li>
 
-            <button type="submit">Submit Application</button>
+            <li>
+                <input
+                    type="text"
+                    name="city"
+                    placeholder="City"
+                />
+            </li>
 
-        </form>
+            <li>
+                <select name="experience">
+                    <option value="">Do you have experience?</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </li>
 
-    </section>
+            <li>
+                <textarea
+                    name="about"
+                    rows="6"
+                    placeholder="Tell us about yourself and why you'd like to work with us."
+                ></textarea>
+            </li>
+
+            <li>
+                <button type="submit">
+                    Submit Application
+                </button>
+            </li>
+
+        </ul>
+
+    </form>
+
+</section>
 
     <!-- HOURS -->
     <section class="hours">
