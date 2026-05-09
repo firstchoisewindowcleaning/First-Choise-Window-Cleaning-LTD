@@ -1,21 +1,15 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const quoteForm = document.getElementById("quoteForm");
+const quoteForm = document.getElementById("quoteForm");
 
-    if (quoteForm) {
-        quoteForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Quote submitted successfully!");
-            this.reset();
-        });
-    }
+if (quoteForm) {
+    quoteForm.addEventListener("submit", function () {
+        alert("Quote submitted successfully!");
+    });
+}
 
-    const jobForm = document.getElementById("jobForm");
+const jobForm = document.getElementById("jobForm");
 
-    if (jobForm) {
-        jobForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Application submitted successfully!");
-            this.reset();
-        });
-    }
-});
+if (jobForm) {
+    jobForm.addEventListener("submit", function () {
+        alert("Application submitted successfully!");
+    });
+}
